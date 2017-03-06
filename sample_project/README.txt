@@ -61,7 +61,7 @@ $ npm install
 
 5. サンプルを作成して起動する
 $ pwd → sample_project
-$ npm full_build_appA
-$ npm serve_appA
+$ npm run full_build_appA
+$ npm run serve_appA
 
 サンプルにはhttp://192.168.1.10:8080/appA/testPage1.html でアクセス可能

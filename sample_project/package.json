@@ -1,0 +1,23 @@
+{
+  "name": "sample_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build_libs": "webpack --optimize-minimize --config webpack_vendor.config",
+    "build_appA": "webpack --optimize-minimize --config webpack_appA.config",
+    "debug_appA": "webpack --devtool source-map --config webpack_appA.config",
+    "clean": "rm -rf dist",
+    "full_build_appA": "npm run clean && npm run build_libs && npm run build_appA",
+    "serve_appA": "webpack-dev-server --config webpack_appA.config"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

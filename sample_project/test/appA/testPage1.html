@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Project</title>
+    <meta charser="UTF-8" />
+  </head>
+  <body>
+     <h1 id="msg">Hello Javascripts</h1>
+     <input id="button" type="button" value="ボタン" />
+
+     <!-- スクリプトは一番最後に読み込ませる -->
+     <script src="/scripts/vendor.js"></script>
+     <script src="/scripts/appA/page1.js"></script>
+     <script type="text/javascript">
+     <!--
+     PAGE1.initialize(
+       '{"message":"hello! world!"}'
+     );
+     PAGE1.run();
+     -->
+     </script>
+  </body>
+</html>
